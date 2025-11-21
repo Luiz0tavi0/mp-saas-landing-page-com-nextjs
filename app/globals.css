@@ -10,7 +10,6 @@
     --breakpoint-xl: 1280px;
     --breakpoint-2xl: 1536px;
 }
-
 body {
     background-image: url('./../public/nnnoise.svg');
     background-color: rgba(255, 255, 255, .05);
@@ -124,10 +123,11 @@ body {
 }
 
 @layer base {
-  * {
-    @apply border-border outline-ring/50;
+    * {
+        @apply border-border outline-ring/50;
     }
-  body {
-    @apply bg-background text-foreground;
+
+    body {
+        @apply bg-background text-foreground;
     }
 }
