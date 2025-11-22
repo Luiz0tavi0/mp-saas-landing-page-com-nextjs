@@ -11,7 +11,7 @@ import {
 
 
 export default function Nav() {
-    return <nav className=' flex h-10 justify-between items-center w-full'>
+    return <nav className=' flex h-10 justify-between items-center w-full p-4 pt-6'>
         <Image
             alt="Logo SaaS"
             height={40} width={142.05}
