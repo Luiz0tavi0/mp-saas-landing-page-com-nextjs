@@ -11,11 +11,13 @@ export default function HowWorks() {
         </h1>
       </div>
 
-      {/* FORÇA 2 COLUNAS DESDE O MENOR BREAKPOINT (320px até infinito) */}
-      <div className="grid grid-cols-2 gap-2 xl:gap-16 max-w-4xl mx-auto mt-12 items-center">
+      <div className="flex flex-row 
+      w-[clamp(353px,calc(353px+0.52245*(100vw-393px)),900.50px)]
+      mx-auto items-center justify-between">
 
-        {/* Imagem da mulher - à esquerda */}
-        <div className="relative h-64 xl:h-96">
+        <div className="relative
+         w-[clamp(176px,calc(176px+0.25645*(100vw-393px)),445px)] 
+         h-[clamp(256px,calc(256px+0.13753*(100vw-393px)),400px)]">
           <Image
             src="/woman.svg"
             alt="Mulher carregando caixas"
@@ -25,28 +27,25 @@ export default function HowWorks() {
           />
         </div>
 
-        {/* Lista - à direita */}
-        <ul className="space-y-4 xl:space-y-8 text-right">
-          <li className="flex items-center justify-end gap-2 lg:gap-4">
-            <span className="font-regular text-[12px] leading-[35px] xl:text-[30px]">
-              Acesso a 1 ebook por mês
-            </span>
-            <Check className="w-5 h-5 xl:w-8 xl:h-8 text-green-500 font-bold stroke-3 shrink-0" />
-          </li>
-          <li className="flex items-center justify-end gap-3 xl:gap-4">
-            <span className="font-regular text-[12px] leading-[35px] xl:text-[30px]">
-              Curadoria especial
-            </span>
-            <Check className="w-5 h-5 xl:w-8 xl:h-8 text-green-500 font-bold stroke-3 shrink-0" />
-          </li>
-          <li className="flex items-center justify-end gap-3 xl:gap-4">
-            <span className="font-regular text-[12px] leading-[35px] xl:text-[30px]">
-              Cancele quando quiser
-            </span>
-            <Check className="w-5 h-5 xl:w-8 xl:h-8 text-green-500 font-bold stroke-3 shrink-0" />
-          </li>
+        <ul className="space-y-[clamp(16px,calc(16px+0.03819*(100vw-393px)),56px)] text-right">
+          {[
+            "Acesso a 1 ebook por mês",
+            "Curadoria especial",
+            "Cancele quando quiser"
+          ].map((text) => (
+            <li key={text} className="flex items-center justify-end 
+      gap-[clamp(8px,calc(8px+0.01528*(100vw-393px)),24px)]">
+              <span className="text-[clamp(12px,calc(12px+0.01719*(100vw-393px)),30px)] leading-[35px]">
+                {text}
+              </span>
+              <Check className="w-[clamp(20px,calc(20px+0.01146*(100vw-393px)),32px)] 
+        h-[clamp(20px,calc(20px+0.01146*(100vw-393px)),32px)] 
+        text-green-500 stroke-3 shrink-0" />
+            </li>
+          ))}
         </ul>
-      </div>
-    </section>
+      
+    </div>
+    </section >
   );
 }
