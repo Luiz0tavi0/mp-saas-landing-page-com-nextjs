@@ -8,14 +8,10 @@ const geistSans = Geist({
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
-  title: "SaaS Landing Page",
-  description: "SaaS Landing Page created by Nextjs16 ",
+  title: "LivrosSaas",
+  description: "Deixe que nós fazemos a curadoria para você. Assine nossa plataforma e receba todos os meses um ebook novo de programação.",
 };
 
 export default function RootLayout({
@@ -25,9 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body 
-      className={`${geistSans.variable} ${geistMono.variable}
-       antialiased flex flex-col items-center`}>
+      <body className={`${geistSans.variable} antialiased flex flex-col items-center`}>
         <Nav />
         {children}
       </body>
