@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 
-export default async function HeroSection() {
+export default function HeroSection() {
   return (
     <section id="hero" className="bg-transparent w-full text-center p-4">
       <div className='flex mt-16 w-full justify-center'>
@@ -12,8 +12,7 @@ export default async function HeroSection() {
         </h1>
       </div>
 
-      <div className="max-w-4xl mx-auto mb-15 
-      clamp(348px, calc(348px + 0.45748 * (100vw - 393px)), 827px)">
+      <div className="max-w-4xl mx-auto mb-15">
         <p className="text-[12px] leading-[15px]
         xl:text-4xl xl:leading-9
         font-normal text-[#6B7280]
@@ -23,18 +22,26 @@ export default async function HeroSection() {
         </p>
       </div>
 
-      <div className="flex flex-col gap-2 w-[clamp(334px,calc(334px+0.07449*(100vw-393px)),412px)] 
-mx-auto">
+      <div className="flex flex-col gap-2 mx-auto
+      text-[12px] leading-[15px]
+      max-w-[334px]
+      xl:max-w-[412px]
+      
+      ">
         <div className="flex gap-2 mb-7 items-center">
           <input
             type="email"
             name="cta_email"
             placeholder="Coloque seu email"
             className="flex-1 h-9 
-      text-sm leading-5 xl:leading-9
-      bg-white outline-none border-[0.5px] border-[#CCCCCC] rounded-md px-3 py-2 focus:border-[#CCCCCC]"
+            text-[12px] leading-5
+             xl:leading-9 xl:text-sm
+              bg-white outline-none border-[0.5px] 
+              border-[#CCCCCC] rounded-md px-2 py-2
+              focus:border-[#CCCCCC]"
           />
-          <Button className="h-9 px-4 rounded-md text-[10px] leading-5 font-normal whitespace-nowrap">
+          <Button className="h-9 px-4 rounded-md text-[10px] leading-5 font-normal whitespace-nowrap
+          xl:leading-9 xl:text-sm">
             Assine Agora
           </Button>
         </div>

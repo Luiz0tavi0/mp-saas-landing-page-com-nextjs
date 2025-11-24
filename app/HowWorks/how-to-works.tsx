@@ -43,8 +43,7 @@ export default function HowWorks() {
         text-green-500 stroke-3 shrink-0" />
             </li>
           ))}
-        </ul>
-      
+        </ul>      
     </div>
     </section >
   );
