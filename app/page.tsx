@@ -9,8 +9,8 @@ import CtaFinal from "./CtaFinal/cta-final";
 
 export default function Home() {
   useEffect(() => {
-    AOS.init({ 
-      duration: 800, 
+    AOS.init({
+      duration: 800,
       once: true,
       easing: 'ease-out'
     });
@@ -25,10 +25,10 @@ export default function Home() {
         <HowHorks />
       </div>
       <div data-aos="fade-up">
-        <PriceSection/>
+        <PriceSection />
       </div>
       <div data-aos="fade-up">
-        <CtaFinal/>
+        <CtaFinal />
       </div>
     </>
   );

@@ -27,7 +27,7 @@ export default function CtaFinal() {
       </div>
 
       <footer className="flex flex-col w-full justify-center items-center mb-9">
-        <Image src={"Logo.svg"} width={129} height={42} alt="logo footer" />
+        <Image src="/Logo.svg" width={129} height={42} alt="logo footer" />
         <p className="text-[10px] leading-5 xl:leading-9 font-light text-[#6B7280]">
           © 2025 LivroSaaS. Todos os direitos reservados.
         </p>

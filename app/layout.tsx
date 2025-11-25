@@ -21,7 +21,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} antialiased flex flex-col items-center`}>
+      <body className={`${geistSans.variable} antialiased`}>
         <Nav />
         {children}
       </body>

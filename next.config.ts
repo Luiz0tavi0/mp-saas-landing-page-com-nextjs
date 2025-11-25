@@ -1,7 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
-};
-
-export default nextConfig;
+  typescript: {
+    ignoreBuildErrors: false,
+  },
+  experimental: {
+    // Desabilita a geração automática de validadores problemáticos
+    typedRoutes: false,
+  },
+  pageExtensions: ['tsx', 'ts', 'jsx', 'js'],
+}

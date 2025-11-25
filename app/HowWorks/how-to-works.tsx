@@ -3,7 +3,7 @@ import { Check } from "lucide-react";
 
 export default function HowWorks() {
   return (
-    <section id="how-work" className="bg-white w-full text-center py-12 px-4">
+    <section id="how-work" className="bg-white w-full min-w-full text-center py-12 px-4">
       <div className="flex w-full justify-center">
         <h1 className="font-bold tracking-[-1px] 
         text-[20px] leading-[45px] xl:text-[40px] xl:leading-[87px]">
